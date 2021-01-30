@@ -1,0 +1,85 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/*=======================================*/
+body {
+	padding: 20px;
+}
+h1 {
+	color: red;
+}
+/* Уточнение, приоретет */
+a.link {
+	color: seagreen;
+}
+.p-text {
+	color: orchid;
+}
+.p-text.blue {
+	color: blue;
+}
+#orange {
+	color: orange;
+}
+/* Вложенность, приоретет */
+span {
+	color: yellow;
+}
+li span {
+	color: sienna;
+}
+.li-text span {
+	color: red;
+}
+li .li-span {
+	color: blue;
+}
+.li-text .li-span {
+	color: blueviolet;
+}
+#id-span {
+	color: yellow;
+}
+/*--------------*/
+ol * {
+	color: yellowgreen;
+}
+/* Только первый уровень вложенности */
+footer > a {
+	color: turquoise;
+}
+/* Обращаемся только к первому следующему объекту того же уровня */
+.text-tilda + p {
+	color: red;
+}
+/* Обращаемся ко всем следующим объектам того же уровня */
+.text-tilda-2 ~ p {
+	color: green;
+}
